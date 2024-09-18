@@ -26,9 +26,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/sex", (req, res) => {
-  res.send(commnet);
+  res.send(JSON.stringify(comment));
 });
 
-app.listen(port, () => {
+app.listen(3001, () => {
   console.log(`Example app listening on port ${port}`);
 });
